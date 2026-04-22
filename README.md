@@ -35,9 +35,9 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 
 | Výstup | Odkaz |
 |---|---|
-| GitHub Pages (live) | [`Doplň odkaz`](#) |
-| Grafický manuál (Figma / Canva) | [`Doplň odkaz`](#) |
-| Grafický návrh webu (Figma) | [`Doplň odkaz`](#) |
+| GitHub Pages (live) | https://pslib-cz.github.io/2025-p2a-web-volny-projekt-Jakub-Kreisinger/ |
+| Grafický manuál (Figma / Canva) | https://www.canva.com/folder/FAHHkMnyWhQ |
+| Grafický návrh webu (Figma) | https://www.figma.com/files/team/1484547763313928906/project/355077559?fuid=1484547759117645794  |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
 ---
