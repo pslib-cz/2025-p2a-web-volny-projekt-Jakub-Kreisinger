@@ -1,0 +1,35 @@
+# WEB | Volný projekt
+
+## Instrukce k projektu
+
+### Informace o projektu
+Výstupem tohoto dlouhodobého projektu bude webová stránka nakódovaná dle grafického návrhu.
+
+---
+
+### 1.1 Výb?r tématu projektu
+- Výb?r tématu zpracovávaného webu je na vás – m?že jít nap?íklad o:
+  - vaše osobní portfolio,
+  - web pro ?lena rodiny (nap?. živnostníka),
+  - váš osobní projekt apod.
+- Pokud to bude služba, tak reálná = vaše, ale ne obecn? „d?lám weby“, „fotím akce“ apod.
+- ?ím konkrétn?jší a uchopiteln?jší téma, tím snazší výroba podklad?.
+- Další instrukce najdete v zadání projektu v p?edm?tu MME.
+
+---
+
+### 1.2 Harmonogram
+
+| **Termín kontroly** | **Aktivita**                         | **O?ekávaný výstup**                                                                  |
+|---------------------|-------------------------------------|----------------------------------------------------------------------------------------|
+| pá 17. 4.           | Založení projektu                    | V repozitá?i založen projekt + GitHub Pages.                                          |
+| st? 22. 4.          | Vytvo?ení konceptu                   | Do repozitá?e p?idáno README.md s:                                                    |
+|                     |                                      | - odkazem na plátno ve Figm? (p?ípadn? i Canva),                                      |
+|                     |                                      | - odkazem na GitHub Pages,                                                            |
+|                     |                                      | - názvem a popisem webu (téma webu, o?ekávaný obsah, co je cílem, jaké má strukturu). |
+| ne 3. 5.            | Grafické zpracování (mobil)          | Navržena mobilní verze webu – jasná struktura webu a obsah (text, obrázky apod.).     |
+| pá 8. 5.            | Konzultace grafického zpracování     | Offline zp?tná vazba k mobilním návrh?m.                                              |
+| pá 15. 5.           | Grafické zpracování (mobil + desktop)| Hotová mobilní i desktop verze grafického návrhu. Za?ínáte kódovat.                   |
+| pá 22. 5.           | Kódování a konzultace                | Na hodin? procházíme kód webu, zp?tná vazba a její zapracovávání. Pr?b?žné hodnocení. |
+| pá 29. 5.           | Kódování                             | Kódujete jako o závod (+200 % obvyklého výkonu).                                      |
+| pá 5. 6.            | Odevzdání výstup? projektu           | Odevzdání projektu – v repozitá?i je kód webu, Figma návrh je kompletn? hotov, materiály pro MME odevzdány, vše spln?no. |
