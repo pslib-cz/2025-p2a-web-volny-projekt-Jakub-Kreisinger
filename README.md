@@ -1,8 +1,8 @@
 # Volný projekt
 
-> **Jméno a příjmení:** `Doplňte`
+> **Jméno a příjmení:** Jakub Kreisinger
 
-> **Název projektu:** `Doplňte`
+> **Název projektu:** Zyntha Clothing
 
 ---
 
@@ -10,7 +10,7 @@
 
 _Krátce popište svůj projekt – čemu se věnuje, co nabízí a jaký problém řeší?_
 
-`Doplňte popis projektu.`
+Můj projekt se bude zabívat tvořením webové stránky pro firmu mého kamaráda, který se zabívá oblečením. Budu mířit na futuristickou stránku, která zaujme a navede zákazníka ke koupi.
 
 ---
 
@@ -26,7 +26,7 @@ _Uveďte konkurenční projekty. Co se vám na nich líbí, co ne? V čem se mů
 
 _Kdo je váš cílový uživatel / zákazník? Popište typického zástupce cílové skupiny._
 
-`Doplňte cílovou skupinu.`
+Myslím si že styl oblečení je mířen na mladší generaci jako studenti adolestenti atd. Takže moje stránka bude mířena ve stejném směru.
 
 
 ## Odkazy a výstupy
