@@ -37,7 +37,7 @@ _Shrnutí všech odkazů na jednom místě. Průběžně aktualizujte._
 |---|---|
 | GitHub Pages (live) | https://pslib-cz.github.io/2025-p2a-web-volny-projekt-Jakub-Kreisinger/ |
 | Grafický manuál (Figma / Canva) | https://www.canva.com/folder/FAHHkMnyWhQ |
-| Grafický návrh webu (Figma) | https://www.figma.com/files/team/1484547763313928906/project/355077559?fuid=1484547759117645794  |
+| Grafický návrh webu (Figma) | https://www.figma.com/design/iyZYSA7Ymi9wc4Uyh3rNhh/KreisingerJakub?node-id=0-1&p=f&t=tCa8q6y512uBNWfW-0  |
 | Fotografie / média | [`Doplň odkaz`](#) |
 
 ---
