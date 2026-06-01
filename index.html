@@ -1,12 +1,226 @@
 <!DOCTYPE html>
 <html lang="cs">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zyntha Clothing</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZYNTHA – Domovská stránka</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  
+  <nav class="navigace" id="navigace">
+    <a href="index.html" class="navigace__logo">ZYNTHA</a>
+
+    <div class="navigace__stred">
+      <a href="produkty.html" class="navigace__odkaz">PRODUKTY</a>
+      <a href="#" class="navigace__odkaz">O NÁS</a>
+    </div>
+
+    <div class="navigace__prava">
+      <button class="navigace__ikona" aria-label="Vyhledat">🔍</button>
+      <a href="#" class="navigace__ikona" aria-label="Oblíbené">❤️</a>
+      <a href="#" class="navigace__ikona" aria-label="Košík">🛒</a>
+    </div>
+
+    <button class="navigace__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+
+  
+   <section class="uvod">
+
     
+    <div class="uvod__pozadovy-text">
+      <span>CARGO</span>
+    </div>
+
+    
+    <div class="uvod__avatar">J</div>
+
+    
+    <div class="uvod__obsah">
+      <p class="uvod__nadpis-maly">Letní kolekce 2026</p>
+      <h1 class="uvod__nadpis">
+        Heavy
+        <strong>Cargo</strong>
+      </h1>
+      <div class="uvod__akce">
+        <a href="produkty.html" class="tlacitko-hlavni">SHOP NOW</a>
+      </div>
+    </div>
+
+    
+    <div class="uvod__tecky">
+      <div class="uvod__tecka"></div>
+      <div class="uvod__tecka uvod__tecka--neaktivni"></div>
+      <div class="uvod__tecka uvod__tecka--neaktivni"></div>
+    </div>
+
+  </section>
+
+
+  
+  <div class="pohyblivy-pruh">
+    <div class="pohyblivy-pruh__obsah">
+      <span>Doprava zdarma nad 2 000 Kč</span>
+      <span class="zlata">✦</span>
+      <span>Nová kolekce 2026</span>
+      <span class="zlata">✦</span>
+      <span>Vrácení do 30 dní</span>
+      <span class="zlata">✦</span>
+      <span>Udržitelná móda</span>
+      <span class="zlata">✦</span>
+      <span>Doprava zdarma nad 2 000 Kč</span>
+      <span class="zlata">✦</span>
+      <span>Nová kolekce 2026</span>
+      <span class="zlata">✦</span>
+      <span>Vrácení do 30 dní</span>
+      <span class="zlata">✦</span>
+      <span>Udržitelná móda</span>
+      <span class="zlata">✦</span>
+    </div>
+  </div>
+
+
+  
+  <div class="kategorie">
+    <a href="produkty.html" class="kategorie__karta">
+      <span class="kategorie__stitek">Letní drop</span>
+      <span class="kategorie__nazev">Shorts<br/>Collection</span>
+      <span class="kategorie__rok">2026</span>
+      <span class="kategorie__sipka">→ Prozkoumat</span>
+    </a>
+    <a href="produkty.html" class="kategorie__karta">
+      <span class="kategorie__stitek">Accessories</span>
+      <span class="kategorie__nazev">Headwear</span>
+      <span class="kategorie__rok">2026</span>
+      <span class="kategorie__sipka">→ Prozkoumat</span>
+    </a>
+  </div>
+
+
+  
+  <section class="doporucene">
+
+    <div class="sekce__hlavicka">
+      <div>
+        <p class="sekce__stitek">Výběr pro tebe</p>
+        <h2 class="sekce__nadpis">Doporučené kusy</h2>
+      </div>
+      <a href="produkty.html" class="sekce__odkaz-vsechny">Celá nabídka →</a>
+    </div>
+
+    <div class="produkty-radek">
+
+      <a href="detail.html" class="produkt">
+        <div class="produkt__obrazek produkt__obrazek--ctverec">
+          👕
+          <button class="produkt__oblibene" title="Přidat do oblíbených">♡</button>
+        </div>
+        <div class="produkt__info">
+          <p class="produkt__nazev">Oversize Tee Stone</p>
+          <div class="produkt__ceny">
+            <span class="produkt__cena">390 Kč</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="detail.html" class="produkt">
+        <div class="produkt__obrazek produkt__obrazek--ctverec">
+          🧥
+          <button class="produkt__oblibene" title="Přidat do oblíbených">♡</button>
+        </div>
+        <div class="produkt__info">
+          <p class="produkt__nazev">Pullover Hoodie Crown</p>
+          <div class="produkt__ceny">
+            <span class="produkt__cena">1 090 Kč</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="detail.html" class="produkt">
+        <div class="produkt__obrazek produkt__obrazek--ctverec">
+          👖
+          <button class="produkt__oblibene" title="Přidat do oblíbených">♡</button>
+        </div>
+        <div class="produkt__info">
+          <p class="produkt__nazev">Jogger Pants Slate</p>
+          <div class="produkt__ceny">
+            <span class="produkt__cena">890 Kč</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="detail.html" class="produkt">
+        <div class="produkt__obrazek produkt__obrazek--ctverec">
+          🧢
+          <button class="produkt__oblibene" title="Přidat do oblíbených">♡</button>
+        </div>
+        <div class="produkt__info">
+          <p class="produkt__nazev">Snapback Logo Cap</p>
+          <div class="produkt__ceny">
+            <span class="produkt__cena">390 Kč</span>
+          </div>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+
+  
+  <footer class="paticka">
+
+    <div class="paticka__mrizka">
+      <div>
+        <p class="paticka__znacka">ZYNTHA</p>
+        <p class="paticka__popis">Moderní streetwear pro každý den. Kvalita, pohodlí a styl v jednom.</p>
+      </div>
+      <div>
+        <p class="paticka__nadpis-sloupce">Kolekce</p>
+        <ul class="paticka__seznam">
+          <li><a href="produkty.html">Všechny produkty</a></li>
+          <li><a href="#">Novinky</a></li>
+          <li><a href="#">Výprodej</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="paticka__nadpis-sloupce">Zákaznická péče</p>
+        <ul class="paticka__seznam">
+          <li><a href="#">Kontakt</a></li>
+          <li><a href="#">Doprava</a></li>
+          <li><a href="#">Vrácení zboží</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="paticka__nadpis-sloupce">Další info</p>
+        <ul class="paticka__seznam">
+          <li><a href="#">O nás</a></li>
+          <li><a href="#">Udržitelnost</a></li>
+          <li><a href="#">Instagram</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="paticka__spodni-pruh">
+      <span class="paticka__copyright">© 2026 Zyntha. Všechna práva vyhrazena.</span>
+      <nav class="paticka__navigace">
+        <a href="produkty.html">KOLEKCE</a>
+        <a href="#">KONTAKT</a>
+        <a href="#">DOPRAVA</a>
+      </nav>
+    </div>
+
+  </footer>
+
+
+  <script src="skripty.js"></script>
 </body>
 </html>
