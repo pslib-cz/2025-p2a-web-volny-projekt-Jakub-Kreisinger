@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ZYNTHA – Produkty</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  
+  <nav class="navigace" id="navigace">
+    <a href="index.html" class="navigace__logo">ZYNTHA</a>
+
+    <div class="navigace__stred">
+      <a href="produkty.html" class="navigace__odkaz navigace__odkaz--aktivni">PRODUKTY</a>
+      <a href="#" class="navigace__odkaz">O NÁS</a>
+    </div>
+
+    
+    <div class="navigace__prava">
+      <button class="navigace__ikona" aria-label="Vyhledat">🔍</button>
+      <a href="#" class="navigace__ikona" aria-label="Oblíbené">❤️</a>
+      <a href="#" class="navigace__ikona" aria-label="Košík">🛒</a>
+    </div>
+
+    <button class="navigace__hamburger" id="hamburger" aria-label="Menu">
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+
+  <div class="stranka">
+
+    
+    <div class="katalog__hlavicka">
+      <div>
+        <p class="katalog__pocet">CELKEM <span>142</span> PRODUKTŮ</p>
+        <h1 class="katalog__nadpis">Produkty</h1>
+      </div>
+    </div>
+
+
+    
+    <div class="katalog__rozlozeni">
+
+      
+      <aside class="filtry">
+
+        <div class="filtry__skupina">
+          <p class="filtry__nadpis">Kategorie</p>
+          <div class="filtry__seznam">
+
+            <label class="filtry__volba">
+              <input type="checkbox" checked />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>Všechny</label>
+              <span class="filtry__pocet">142</span>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>Trička</label>
+              <span class="filtry__pocet">38</span>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>Mikiny</label>
+              <span class="filtry__pocet">24</span>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>Kalhoty</label>
+              <span class="filtry__pocet">31</span>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>Doplňky</label>
+              <span class="filtry__pocet">49</span>
+            </label>
+
+          </div>
+        </div>
+
+        <div class="filtry__skupina">
+          <p class="filtry__nadpis">Velikost</p>
+          <div class="filtry__seznam">
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>XS</label>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>S</label>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>M</label>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>L</label>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>XL</label>
+            </label>
+
+          </div>
+        </div>
+
+        <div class="filtry__skupina">
+          <p class="filtry__nadpis">Cena</p>
+          <div class="filtry__seznam">
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>Do 500 Kč</label>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>500–1 000 Kč</label>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>1 000–2 000 Kč</label>
+            </label>
+
+            <label class="filtry__volba">
+              <input type="checkbox" />
+              <span class="filtry__zaskrtavaci"></span>
+              <label>Nad 2 000 Kč</label>
+            </label>
+
+          </div>
+        </div>
+
+      </aside>
+
+
+      
+      <main class="katalog__hlavni">
+
+        
+        <div class="katalog__listy">
+          <select class="katalog__razeni">
+            <option>Doporučené</option>
+            <option>Nejnovější</option>
+            <option>Cena ↑</option>
+            <option>Cena ↓</option>
+          </select>
+        </div>
+
+        
+        <div class="katalog__mrizka" id="mrizkaKatalogu"></div>
+
+        
+        <div class="katalog__nacist-dalsi">
+          <button class="tlacitko-okraj" id="nacistDalsi">Načíst další</button>
+        </div>
+
+      </main>
+
+    </div>
+
+
+   
+    <footer class="paticka">
+      <div class="paticka__spodni-pruh">
+        <span class="paticka__copyright">© 2026 Zyntha. Všechna práva vyhrazena.</span>
+        <nav class="paticka__navigace">
+          <a href="produkty.html">KOLEKCE</a>
+          <a href="#">KONTAKT</a>
+          <a href="#">DOPRAVA</a>
+        </nav>
+      </div>
+    </footer>
+
+  </div>
+
+
+  <script src="skripty.js"></script>
+</body>
+</html>

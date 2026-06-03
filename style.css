@@ -1,16 +1,24 @@
-*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 :root {
   --pozadi: #0e0d0b;
   --zlata: #c8973a;
   --zlata-svetla: #d4a843;
-  --okraj: rgba(255,255,255,.07);
-  --text: rgba(255,255,255,.85);
-  --text-tlumeny: rgba(255,255,255,.4);
+  --okraj: rgba(255, 255, 255, .07);
+  --text: rgba(255, 255, 255, .85);
+  --text-tlumeny: rgba(255, 255, 255, .4);
   --op: clamp(1rem, 4vw, 2.5rem);
 }
 
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   background: var(--pozadi);
@@ -30,25 +38,31 @@ body::before {
   z-index: 9999;
 }
 
-.stranka { padding-top: 52px; }
+.stranka {
+  padding-top: 52px;
+}
 
 
 .navigace {
   position: fixed;
-  top: 0; left: 0; right: 0;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 200;
   height: 52px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 var(--op);
-  background: rgba(14,13,11,.92);
+  background: rgba(14, 13, 11, .92);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--okraj);
   transition: background .3s;
 }
 
-.navigace.prilepena { background: rgba(14,13,11,.98); }
+.navigace.prilepena {
+  background: rgba(14, 13, 11, .98);
+}
 
 .navigace__logo {
   font-size: .75rem;
@@ -59,7 +73,9 @@ body::before {
   transition: color .2s;
 }
 
-.navigace__logo:hover { color: var(--zlata); }
+.navigace__logo:hover {
+  color: var(--zlata);
+}
 
 .navigace__stred {
   display: none;
@@ -69,13 +85,17 @@ body::before {
   transform: translateX(-50%);
 }
 
-@media (min-width: 640px) { .navigace__stred { display: flex; } }
+@media (min-width: 640px) {
+  .navigace__stred {
+    display: flex;
+  }
+}
 
 .navigace__odkaz {
   font-size: .6rem;
   font-weight: 500;
   letter-spacing: .2em;
-  color: rgba(255,255,255,.55);
+  color: rgba(255, 255, 255, .55);
   text-decoration: none;
   padding-bottom: 2px;
   border-bottom: 1px solid transparent;
@@ -83,14 +103,21 @@ body::before {
 }
 
 .navigace__odkaz:hover,
-.navigace__odkaz--aktivni { color: #fff; border-color: var(--zlata); }
+.navigace__odkaz--aktivni {
+  color: #fff;
+  border-color: var(--zlata);
+}
 
-.navigace__prava { display: flex; align-items: center; gap: .8rem; }
+.navigace__prava {
+  display: flex;
+  align-items: center;
+  gap: .8rem;
+}
 
 .navigace__ikona {
   background: none;
   border: none;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, .5);
   cursor: pointer;
   padding: 4px;
   display: flex;
@@ -99,7 +126,9 @@ body::before {
   transition: color .2s;
 }
 
-.navigace__ikona:hover { color: #fff; }
+.navigace__ikona:hover {
+  color: #fff;
+}
 
 .navigace__hamburger {
   display: flex;
@@ -115,11 +144,15 @@ body::before {
   display: block;
   width: 20px;
   height: 1px;
-  background: rgba(255,255,255,.6);
+  background: rgba(255, 255, 255, .6);
   transition: all .3s;
 }
 
-@media (min-width: 640px) { .navigace__hamburger { display: none; } }
+@media (min-width: 640px) {
+  .navigace__hamburger {
+    display: none;
+  }
+}
 
 
 .tlacitko-hlavni {
@@ -140,7 +173,10 @@ body::before {
   transition: background .25s, transform .2s;
 }
 
-.tlacitko-hlavni:hover { background: var(--zlata-svetla); transform: translateY(-1px); }
+.tlacitko-hlavni:hover {
+  background: var(--zlata-svetla);
+  transform: translateY(-1px);
+}
 
 .tlacitko-okraj {
   display: inline-flex;
@@ -155,12 +191,15 @@ body::before {
   text-transform: uppercase;
   text-decoration: none;
   padding: .65rem 1.3rem;
-  border: 1px solid rgba(255,255,255,.2);
+  border: 1px solid rgba(255, 255, 255, .2);
   cursor: pointer;
   transition: border-color .25s, color .25s;
 }
 
-.tlacitko-okraj:hover { border-color: var(--zlata); color: var(--zlata); }
+.tlacitko-okraj:hover {
+  border-color: var(--zlata);
+  color: var(--zlata);
+}
 
 
 .produkt {
@@ -173,7 +212,9 @@ body::before {
   position: relative;
 }
 
-.produkt:hover { background: rgba(255,255,255,.015); }
+.produkt:hover {
+  background: rgba(255, 255, 255, .015);
+}
 
 .produkt__obrazek {
   aspect-ratio: 1 / 1.1;
@@ -184,16 +225,20 @@ body::before {
   border-bottom: 1px solid var(--okraj);
   position: relative;
   overflow: hidden;
-  background: rgba(255,255,255,.01);
+  background: rgba(255, 255, 255, .01);
 }
 
-.produkt__obrazek--ctverec { aspect-ratio: 1; font-size: 3rem; }
+.produkt__obrazek--ctverec {
+  aspect-ratio: 1;
+  font-size: 3rem;
+}
 
 .produkt__oblibene {
   position: absolute;
-  top: .6rem; right: .7rem;
+  top: .6rem;
+  right: .7rem;
   font-size: 1rem;
-  color: rgba(255,255,255,.3);
+  color: rgba(255, 255, 255, .3);
   cursor: pointer;
   border: none;
   background: none;
@@ -202,14 +247,20 @@ body::before {
   transition: color .2s, transform .2s;
 }
 
-.produkt:hover .produkt__oblibene { opacity: 1; }
+.produkt:hover .produkt__oblibene {
+  opacity: 1;
+}
 
 .produkt__oblibene:hover,
-.produkt__oblibene--aktivni { color: #ee0055; transform: scale(1.15); }
+.produkt__oblibene--aktivni {
+  color: #ee0055;
+  transform: scale(1.15);
+}
 
 .produkt__stitek-novinka {
   position: absolute;
-  top: .6rem; left: .6rem;
+  top: .6rem;
+  left: .6rem;
   font-size: .5rem;
   letter-spacing: .15em;
   text-transform: uppercase;
@@ -219,7 +270,12 @@ body::before {
   font-weight: 600;
 }
 
-.produkt__info { padding: .75rem .8rem 1rem; display: flex; flex-direction: column; gap: .2rem; }
+.produkt__info {
+  padding: .75rem .8rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: .2rem;
+}
 
 .produkt__kategorie {
   font-size: .5rem;
@@ -232,29 +288,59 @@ body::before {
 .produkt__nazev {
   font-family: 'Cormorant Garamond', serif;
   font-size: .95rem;
-  color: rgba(255,255,255,.85);
+  color: rgba(255, 255, 255, .85);
   line-height: 1.3;
 }
 
-.produkt__ceny { display: flex; align-items: center; gap: .5rem; margin-top: .15rem; }
+.produkt__ceny {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: .15rem;
+}
 
-.produkt__cena { font-size: .7rem; color: rgba(255,255,255,.5); letter-spacing: .05em; }
+.produkt__cena {
+  font-size: .7rem;
+  color: rgba(255, 255, 255, .5);
+  letter-spacing: .05em;
+}
 
-.produkt__cena-puvodni { font-size: .65rem; color: rgba(255,255,255,.22); text-decoration: line-through; }
+.produkt__cena-puvodni {
+  font-size: .65rem;
+  color: rgba(255, 255, 255, .22);
+  text-decoration: line-through;
+}
 
 
-.paticka { border-top: 1px solid var(--okraj); padding: 2.5rem var(--op); }
+.paticka {
+  border-top: 1px solid var(--okraj);
+  padding: 2.5rem var(--op);
+}
 
-.paticka__mrizka { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-bottom: 2rem; }
+.paticka__mrizka {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
 
-@media (min-width: 768px) { .paticka__mrizka { grid-template-columns: 2fr 1fr 1fr 1fr; } }
+@media (min-width: 768px) {
+  .paticka__mrizka {
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+  }
+}
 
-.paticka__znacka { font-size: .8rem; letter-spacing: .3em; color: #fff; margin-bottom: .6rem; }
+.paticka__znacka {
+  font-size: .8rem;
+  letter-spacing: .3em;
+  color: #fff;
+  margin-bottom: .6rem;
+}
 
 .paticka__popis {
   font-family: 'Cormorant Garamond', serif;
   font-size: .85rem;
-  color: rgba(255,255,255,.3);
+  color: rgba(255, 255, 255, .3);
   line-height: 1.6;
   font-style: italic;
 }
@@ -263,21 +349,28 @@ body::before {
   font-size: .55rem;
   letter-spacing: .25em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, .4);
   margin-bottom: .8rem;
 }
 
-.paticka__seznam { list-style: none; display: flex; flex-direction: column; gap: .5rem; }
+.paticka__seznam {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
 
 .paticka__seznam a {
   font-family: 'Cormorant Garamond', serif;
   font-size: .9rem;
-  color: rgba(255,255,255,.4);
+  color: rgba(255, 255, 255, .4);
   text-decoration: none;
   transition: color .2s;
 }
 
-.paticka__seznam a:hover { color: var(--zlata); }
+.paticka__seznam a:hover {
+  color: var(--zlata);
+}
 
 .paticka__spodni-pruh {
   border-top: 1px solid var(--okraj);
@@ -289,20 +382,29 @@ body::before {
   gap: .5rem;
 }
 
-.paticka__copyright { font-size: .55rem; letter-spacing: .15em; color: rgba(255,255,255,.2); }
+.paticka__copyright {
+  font-size: .55rem;
+  letter-spacing: .15em;
+  color: rgba(255, 255, 255, .2);
+}
 
-.paticka__navigace { display: flex; gap: 1.5rem; }
+.paticka__navigace {
+  display: flex;
+  gap: 1.5rem;
+}
 
 .paticka__navigace a {
   font-size: .55rem;
   letter-spacing: .15em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.3);
+  color: rgba(255, 255, 255, .3);
   text-decoration: none;
   transition: color .2s;
 }
 
-.paticka__navigace a:hover { color: var(--zlata); }
+.paticka__navigace a:hover {
+  color: var(--zlata);
+}
 
 .uvod {
   position: relative;
@@ -327,7 +429,7 @@ body::before {
   font-family: 'Cormorant Garamond', serif;
   font-size: clamp(5rem, 22vw, 18rem);
   font-weight: 300;
-  color: rgba(255,255,255,.04);
+  color: rgba(255, 255, 255, .04);
   letter-spacing: -.02em;
   white-space: nowrap;
   user-select: none;
@@ -350,7 +452,11 @@ body::before {
   color: #1a1208;
 }
 
-.uvod__obsah { position: relative; z-index: 2; max-width: 460px; }
+.uvod__obsah {
+  position: relative;
+  z-index: 2;
+  max-width: 460px;
+}
 
 .uvod__nadpis-maly {
   font-size: .6rem;
@@ -371,24 +477,42 @@ body::before {
   margin-bottom: 1.2rem;
 }
 
-.uvod__nadpis strong { font-style: normal; font-weight: 600; display: block; }
+.uvod__nadpis strong {
+  font-style: normal;
+  font-weight: 600;
+  display: block;
+}
 
-.uvod__akce { display: flex; align-items: center; gap: 1.5rem; flex-wrap: wrap; }
+.uvod__akce {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
 
 .uvod__tecky {
   position: absolute;
-  bottom: 3.5rem; right: var(--op);
+  bottom: 3.5rem;
+  right: var(--op);
   display: flex;
   gap: 1.2rem;
   align-items: center;
 }
 
-.uvod__tecka { width: 6px; height: 6px; border-radius: 50%; background: var(--zlata); }
+.uvod__tecka {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--zlata);
+}
 
-.uvod__tecka--neaktivni { background: transparent; border: 1px solid rgba(255,255,255,.3); }
+.uvod__tecka--neaktivni {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, .3);
+}
 
 .pohyblivy-pruh {
-  background: rgba(255,255,255,.03);
+  background: rgba(255, 255, 255, .03);
   border-top: 1px solid var(--okraj);
   border-bottom: 1px solid var(--okraj);
   overflow: hidden;
@@ -406,16 +530,32 @@ body::before {
   font-size: .6rem;
   letter-spacing: .3em;
   text-transform: uppercase;
-  color: rgba(255,255,255,.35);
+  color: rgba(255, 255, 255, .35);
   white-space: nowrap;
 }
 
-.pohyblivy-pruh__obsah span.zlata { color: var(--zlata); opacity: .6; }
+.pohyblivy-pruh__obsah span.zlata {
+  color: var(--zlata);
+  opacity: .6;
+}
 
-@keyframes posun { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+@keyframes posun {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
 
 
-.kategorie { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--okraj); }
+.kategorie {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--okraj);
+}
 
 .kategorie__karta {
   background: var(--pozadi);
@@ -432,7 +572,9 @@ body::before {
 .kategorie__karta::before {
   content: '';
   position: absolute;
-  bottom: 0; left: 0; right: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 1px;
   background: var(--zlata);
   transform: scaleX(0);
@@ -440,10 +582,20 @@ body::before {
   transition: transform .4s ease;
 }
 
-.kategorie__karta:hover::before { transform: scaleX(1); }
-.kategorie__karta:hover { background: rgba(255,255,255,.02); }
+.kategorie__karta:hover::before {
+  transform: scaleX(1);
+}
 
-.kategorie__stitek { font-size: .55rem; letter-spacing: .25em; text-transform: uppercase; color: var(--zlata); }
+.kategorie__karta:hover {
+  background: rgba(255, 255, 255, .02);
+}
+
+.kategorie__stitek {
+  font-size: .55rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: var(--zlata);
+}
 
 .kategorie__nazev {
   font-family: 'Cormorant Garamond', serif;
@@ -454,16 +606,38 @@ body::before {
   line-height: 1.15;
 }
 
-.kategorie__rok { font-family: 'Cormorant Garamond', serif; font-size: 1rem; color: rgba(255,255,255,.5); font-style: italic; }
+.kategorie__rok {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem;
+  color: rgba(255, 255, 255, .5);
+  font-style: italic;
+}
 
-.kategorie__sipka { margin-top: .8rem; font-size: .7rem; color: var(--zlata); letter-spacing: .15em; }
+.kategorie__sipka {
+  margin-top: .8rem;
+  font-size: .7rem;
+  color: var(--zlata);
+  letter-spacing: .15em;
+}
 
 
-.doporucene { padding: 3rem var(--op) 4rem; }
+.doporucene {
+  padding: 3rem var(--op) 4rem;
+}
 
-.sekce__hlavicka { display: flex; align-items: baseline; justify-content: space-between; margin-bottom: 1.5rem; }
+.sekce__hlavicka {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
 
-.sekce__stitek { font-size: .6rem; letter-spacing: .25em; text-transform: uppercase; color: rgba(255,255,255,.4); }
+.sekce__stitek {
+  font-size: .6rem;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .4);
+}
 
 .sekce__nadpis {
   font-family: 'Cormorant Garamond', serif;
@@ -483,8 +657,206 @@ body::before {
   transition: border-color .2s;
 }
 
-.sekce__odkaz-vsechny:hover { border-color: var(--zlata); }
+.sekce__odkaz-vsechny:hover {
+  border-color: var(--zlata);
+}
 
-.produkty-radek { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1px; background: var(--okraj); }
+.produkty-radek {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--okraj);
+}
 
-@media (min-width: 600px) { .produkty-radek { grid-template-columns: repeat(4, 1fr); } }
+@media (min-width: 600px) {
+  .produkty-radek {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+
+.katalog__hlavicka {
+  padding: 3rem var(--op) 2rem;
+  border-bottom: 1px solid var(--okraj);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.katalog__pocet {
+  font-size: .55rem;
+  letter-spacing: .2em;
+  color: var(--text-tlumeny);
+  margin-bottom: .4rem;
+}
+
+.katalog__pocet span {
+  color: var(--zlata);
+}
+
+.katalog__nadpis {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  font-weight: 300;
+  font-style: italic;
+  color: #fff;
+}
+
+
+.katalog__rozlozeni {
+  display: flex;
+  min-height: calc(100vh - 52px);
+}
+
+
+.filtry {
+  display: none;
+  width: 200px;
+  flex-shrink: 0;
+  border-right: 1px solid var(--okraj);
+  padding: 2rem 1.2rem;
+  position: sticky;
+  top: 52px;
+  height: calc(100vh - 52px);
+  overflow-y: auto;
+}
+
+@media (min-width: 768px) {
+  .filtry {
+    display: block;
+  }
+}
+
+.filtry__skupina {
+  margin-bottom: 2rem;
+}
+
+.filtry__nadpis {
+  font-size: .55rem;
+  font-weight: 600;
+  letter-spacing: .25em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, .35);
+  margin-bottom: .8rem;
+  padding-bottom: .5rem;
+  border-bottom: 1px solid var(--okraj);
+}
+
+.filtry__seznam {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.filtry__volba {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  padding: .2rem 0;
+}
+
+.filtry__volba label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: .9rem;
+  color: var(--text-tlumeny);
+  cursor: pointer;
+  transition: color .2s;
+}
+
+.filtry__volba:hover label {
+  color: #fff;
+}
+
+.filtry__volba input[type="checkbox"] {
+  display: none;
+}
+
+.filtry__zaskrtavaci {
+  width: 12px;
+  height: 12px;
+  border: 1px solid rgba(255, 255, 255, .2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: border-color .2s;
+}
+
+.filtry__volba input:checked~.filtry__zaskrtavaci {
+  border-color: var(--zlata);
+  background: var(--zlata);
+}
+
+.filtry__volba input:checked~.filtry__zaskrtavaci::after {
+  content: '';
+  width: 6px;
+  height: 4px;
+  border-left: 1px solid #1a1208;
+  border-bottom: 1px solid #1a1208;
+  transform: rotate(-45deg) translateY(-1px);
+}
+
+.filtry__pocet {
+  font-size: .55rem;
+  color: rgba(255, 255, 255, .2);
+}
+
+
+.katalog__hlavni {
+  flex: 1;
+  min-width: 0;
+}
+
+.katalog__listy {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1rem;
+  padding: 1rem var(--op);
+  border-bottom: 1px solid var(--okraj);
+}
+
+.katalog__razeni {
+  font-size: .6rem;
+  letter-spacing: .1em;
+  background: none;
+  border: 1px solid var(--okraj);
+  color: rgba(255, 255, 255, .5);
+  padding: .4rem .8rem;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transition: border-color .2s;
+}
+
+.katalog__razeni:hover {
+  border-color: var(--zlata);
+}
+
+.katalog__razeni option {
+  background: var(--pozadi);
+}
+
+.katalog__mrizka {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--okraj);
+  padding: 1px;
+}
+
+@media (min-width: 900px) {
+  .katalog__mrizka {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.katalog__nacist-dalsi {
+  padding: 2.5rem var(--op);
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid var(--okraj);
+}
