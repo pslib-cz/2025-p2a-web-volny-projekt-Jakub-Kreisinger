@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZYNTHA – Premium Streetwear</title>
+    <title>Zip Hoodie | ZYNTHA</title>
     <meta name="description" content="ZYNTHA – prémiové streetwear oblečení. Hoodies, trička, šortky a čepice." />
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
@@ -25,17 +25,17 @@
   <header class="nav-header" id="nav-header">
     <nav class="nav-container" aria-label="Hlavní navigace">
       <a href="index.html" class="nav-logo" aria-label="ZYNTHA – zpět na úvodní stránku">ZYNTHA</a>
-      <ul class="nav-links" role="list">
+      <menu class="nav-links" role="list">
         <li><a href="index.html" class="nav-link">Úvod</a></li>
         <li><a href="products.html" class="nav-link active">Produkty</a></li>
         <li><a href="contact.html" class="nav-link">Kontakt</a></li>
-      </ul>
+      </menu>
       <div class="nav-actions">
         <button class="nav-icon-btn" aria-label="Vyhledat">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <span class="emoji-icon" aria-hidden="true">🔍</span>
         </button>
         <button class="nav-icon-btn" aria-label="Košík">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="emoji-icon" aria-hidden="true">🛍️</span>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
@@ -43,11 +43,11 @@
       </div>
     </nav>
     <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobilní navigace" aria-hidden="true">
-      <ul role="list">
+      <menu role="list">
         <li><a href="index.html" class="mobile-link">Úvod</a></li>
         <li><a href="products.html" class="mobile-link active">Produkty</a></li>
         <li><a href="contact.html" class="mobile-link">Kontakt</a></li>
-      </ul>
+      </menu>
     </div>
   </header>
 
@@ -84,11 +84,11 @@
           </div>
 
           
-          <div class="product-main-img" id="product-main-img">
-            <div class="product-main-img-inner" id="product-main-img-inner">
+          <button type="button" class="product-main-img" id="product-main-img" aria-label="Zvětšit fotografii produktu">
+            <span class="product-main-img-inner" id="product-main-img-inner">
               <img id="product-main-photo" src="images/pic1.jpg" alt="Zip Hoodie Onyx – hlavní fotografie">
-            </div>
-          </div>
+            </span>
+          </button>
         </div>
 
         
@@ -134,7 +134,7 @@
             <button class="btn btn-primary btn-full" id="add-to-cart">Přidat do košíku</button>
           </div>
           <button class="btn btn-ghost btn-full" aria-label="Přidat do oblíbených">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
+            <span class="emoji-icon" aria-hidden="true">❤️</span>
             Přidat do oblíbených
           </button>
 
@@ -142,7 +142,7 @@
           <div class="product-accordion" id="accordion">
             <button class="accordion-btn" aria-expanded="true" aria-controls="acc-desc" id="acc-desc-btn">
               Popis produktu
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="accordion-icon"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <span class="emoji-icon" aria-hidden="true">⌄</span>
             </button>
             <div class="accordion-content" id="acc-desc" role="region" aria-labelledby="acc-desc-btn">
               <p>Oversized zip hoodie s prémiovým kovovým zipem. Vyrobena z měkké 80% bavlny a 20% polyesteru. Ideální pro každodenní nošení – pohodlná, stylová, nadčasová.</p>
@@ -156,7 +156,7 @@
 
             <button class="accordion-btn" aria-expanded="false" aria-controls="acc-size" id="acc-size-btn">
               Materiál a péče
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="accordion-icon"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <span class="emoji-icon" aria-hidden="true">⌄</span>
             </button>
             <div class="accordion-content accordion-content--closed" id="acc-size" role="region" aria-labelledby="acc-size-btn">
               <p>80% bavlna, 20% polyester. Prát při 30 °C. Nečistit chemicky. Nesušit v sušičce.</p>
@@ -164,7 +164,7 @@
 
             <button class="accordion-btn" aria-expanded="false" aria-controls="acc-ship" id="acc-ship-btn">
               Doprava a vrácení
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true" class="accordion-icon"><polyline points="6 9 12 15 18 9"></polyline></svg>
+              <span class="emoji-icon" aria-hidden="true">⌄</span>
             </button>
             <div class="accordion-content accordion-content--closed" id="acc-ship" role="region" aria-labelledby="acc-ship-btn">
               <p>Doprava zdarma nad 1 500 Kč. Vrácení zboží do 30 dní bez udání důvodu.</p>
@@ -292,11 +292,6 @@
   
   <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="scripts.js"></script>
+  
 </body>
 </html>
-
-
-
-

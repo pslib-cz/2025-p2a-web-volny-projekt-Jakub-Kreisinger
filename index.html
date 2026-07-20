@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ZYNTHA – Premium Streetwear</title>
+  <title>Domů | ZYNTHA</title>
   <meta name="description" content="ZYNTHA – prémiové streetwear oblečení. Hoodies, trička, šortky a čepice." />
   <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
@@ -27,18 +27,18 @@
       <a href="index.html" class="nav-logo" aria-label="ZYNTHA – zpět na úvodní stránku">ZYNTHA</a>
 
      
-      <ul class="nav-links" role="list">
+      <menu class="nav-links" role="list">
         <li><a href="index.html" class="nav-link active">Úvod</a></li>
         <li><a href="products.html" class="nav-link">Produkty</a></li>
         <li><a href="contact.html" class="nav-link">Kontakt</a></li>
-      </ul>
+      </menu>
 
       <div class="nav-actions">
         <button class="nav-icon-btn" aria-label="Vyhledat">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <span class="emoji-icon" aria-hidden="true">🔍</span>
         </button>
         <button class="nav-icon-btn" aria-label="Košík">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="emoji-icon" aria-hidden="true">🛍️</span>
         </button>
         
         <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
@@ -49,11 +49,11 @@
 
     
     <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobilní navigace" aria-hidden="true">
-      <ul role="list">
+      <menu role="list">
         <li><a href="index.html" class="mobile-link active">Úvod</a></li>
         <li><a href="products.html" class="mobile-link">Produkty</a></li>
         <li><a href="contact.html" class="mobile-link">Kontakt</a></li>
-      </ul>
+      </menu>
     </div>
   </header>
 
@@ -65,8 +65,7 @@
       <div class="hero-content">
         <p class="hero-label animate-fade-up">Nová kolekce 2026</p>
         <h1 class="hero-title animate-fade-up delay-1">
-          Oversized<br />
-          <em>Hoodie</em>
+          Oversized <em>Hoodie</em>
         </h1>
         <div class="hero-actions animate-fade-up delay-2">
           <a href="products.html" class="btn btn-primary">Nakupovat</a>
@@ -166,26 +165,26 @@
     
     <section class="collections" aria-label="Kolekce">
       <div class="collection-grid">
-        <article class="collection-card collection-card--large">
+        <a href="products.html" class="collection-card collection-card--large" aria-label="Prozkoumat kolekci Shorts Collection">
           <div class="collection-card-bg" aria-hidden="true">
               <img src="images/pic1.jpg" alt="Lookbook kolekce" />
           </div>
           <div class="collection-card-content">
             <p class="collection-label">SS 2026</p>
-            <h3 class="collection-title">Shorts<br />Collection</h3>
-            <a href="products.html" class="btn btn-ghost btn-sm">Prozkoumat</a>
+            <h3 class="collection-title">Shorts Collection</h3>
+            <span class="btn btn-ghost btn-sm" aria-hidden="true">Prozkoumat</span>
           </div>
-        </article>
-        <article class="collection-card">
+        </a>
+        <a href="products.html" class="collection-card" aria-label="Prozkoumat kolekci Headwear SS 2026">
           <div class="collection-card-bg" aria-hidden="true">
               <img src="images/pic2.jpg" alt="Profilové foto kolekce čepic" />
           </div>
           <div class="collection-card-content">
             <p class="collection-label">SS 2026</p>
-            <h3 class="collection-title">Headwear<br />SS 2026</h3>
-            <a href="products.html" class="btn btn-ghost btn-sm">Prozkoumat</a>
+            <h3 class="collection-title">Headwear SS 2026</h3>
+            <span class="btn btn-ghost btn-sm" aria-hidden="true">Prozkoumat</span>
           </div>
-        </article>
+        </a>
       </div>
     </section>
 
@@ -259,22 +258,22 @@
       </div>
       <div class="gallery-grid" id="gallery" aria-label="Galerie produktů">
         <a href="#" class="gallery-item" data-src="images/pic1.jpg" aria-label="Lookbook foto 1">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #1a1a1a 0%, #2a2010 100%);">
+          <div class="gallery-placeholder gallery-placeholder--1">
             <img src='images/pic1.jpg' alt='Lookbook fotografie' />
           </div>
         </a>
         <a href="#" class="gallery-item" data-src="images/pic1.jpg" aria-label="Lookbook foto 2">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #0a1525 0%, #1a2535 100%);">
+          <div class="gallery-placeholder gallery-placeholder--2">
             <img src='images/pic1.jpg' alt='Lookbook fotografie' />
           </div>
         </a>
         <a href="#" class="gallery-item" data-src="images/pic1.jpg" aria-label="Lookbook foto 3">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #1a1005 0%, #2a2010 100%);">
+          <div class="gallery-placeholder gallery-placeholder--3">
             <img src='images/pic1.jpg' alt='Lookbook fotografie' />
           </div>
         </a>
         <a href="#" class="gallery-item" data-src="images/pic1.jpg" aria-label="Lookbook foto 4">
-          <div class="gallery-placeholder" style="background: linear-gradient(135deg, #0a1020 0%, #1a2030 100%);">
+          <div class="gallery-placeholder gallery-placeholder--4">
             <img src='images/pic1.jpg' alt='Lookbook fotografie' />
           </div>
         </a>
@@ -285,7 +284,7 @@
     <section class="newsletter" aria-labelledby="newsletter-title">
       <div class="newsletter-content">
         <p class="newsletter-label">Buďte první</p>
-        <h2 class="newsletter-title" id="newsletter-title">Nové kolekce<br /><em>dříve než ostatní</em></h2>
+        <h2 class="newsletter-title" id="newsletter-title">Nové kolekce <em>dříve než ostatní</em></h2>
         <p class="newsletter-desc">Přihlaste se k odběru novinek a získejte 10 % slevu na první objednávku.</p>
         <form class="newsletter-form" id="newsletter-form" novalidate aria-label="Formulář odběru novinek">
           <div class="form-group">
@@ -350,21 +349,6 @@
   </footer>
 
   
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   
-  <script src="https://cdn.jsdelivr.net/npm/lightgallery@2.7.1/lightgallery.min.js"></script>
-
-  <script src="scripts.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-

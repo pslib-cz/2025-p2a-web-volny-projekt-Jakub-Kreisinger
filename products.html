@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>ZYNTHA – Premium Streetwear</title>
+    <title>Produkty | ZYNTHA</title>
     <meta name="description" content="ZYNTHA – prémiové streetwear oblečení. Hoodies, trička, šortky a čepice." />
     <link rel="icon" type="image/png" href="images/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
@@ -25,17 +25,17 @@
   <header class="nav-header" id="nav-header">
     <nav class="nav-container" aria-label="Hlavní navigace">
       <a href="index.html" class="nav-logo" aria-label="ZYNTHA – zpět na úvodní stránku">ZYNTHA</a>
-      <ul class="nav-links" role="list">
+      <menu class="nav-links" role="list">
         <li><a href="index.html" class="nav-link">Úvod</a></li>
         <li><a href="products.html" class="nav-link active">Produkty</a></li>
         <li><a href="contact.html" class="nav-link">Kontakt</a></li>
-      </ul>
+      </menu>
       <div class="nav-actions">
         <button class="nav-icon-btn" aria-label="Vyhledat">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+          <span class="emoji-icon" aria-hidden="true">🔍</span>
         </button>
         <button class="nav-icon-btn" aria-label="Košík">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"/><line x1="3" x2="21" y1="6" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          <span class="emoji-icon" aria-hidden="true">🛍️</span>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
@@ -43,11 +43,11 @@
       </div>
     </nav>
     <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobilní navigace" aria-hidden="true">
-      <ul role="list">
+      <menu role="list">
         <li><a href="index.html" class="mobile-link">Úvod</a></li>
         <li><a href="products.html" class="mobile-link active">Produkty</a></li>
         <li><a href="contact.html" class="mobile-link">Kontakt</a></li>
-      </ul>
+      </menu>
     </div>
   </header>
 
@@ -67,7 +67,7 @@
         <aside class="filters-sidebar" aria-label="Filtry produktů">
           <div class="filter-toggle-wrap">
             <button class="filter-toggle" id="filter-toggle" aria-expanded="false" aria-controls="filter-panel">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><line x1="4" x2="20" y1="6" y2="6"/><line x1="8" x2="16" y1="12" y2="12"/><line x1="11" x2="13" y1="18" y2="18"/></svg>
+              <span class="emoji-icon" aria-hidden="true">🔽</span>
               Filtrovat
             </button>
           </div>
@@ -270,10 +270,6 @@
     </div>
   </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="scripts.js"></script>
+  
 </body>
 </html>
-
-
-
