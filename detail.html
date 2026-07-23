@@ -22,31 +22,31 @@
 <body>
 
   
-  <header class="nav-header" id="nav-header">
-    <nav class="nav-container" aria-label="Hlavní navigace">
-      <a href="index.html" class="nav-logo" aria-label="ZYNTHA – zpět na úvodní stránku">ZYNTHA</a>
-      <menu class="nav-links" role="list">
-        <li><a href="index.html" class="nav-link">Úvod</a></li>
-        <li><a href="products.html" class="nav-link active">Produkty</a></li>
-        <li><a href="contact.html" class="nav-link">Kontakt</a></li>
+  <header class="hlavicka" id="nav-header">
+    <nav class="hlavicka__kontejner" aria-label="Hlavní navigace">
+      <a href="index.html" class="hlavicka__logo" aria-label="ZYNTHA – zpět na úvodní stránku">ZYNTHA</a>
+      <menu class="hlavicka__menu" role="list">
+        <li><a href="index.html" class="hlavicka__odkaz">Úvod</a></li>
+        <li><a href="products.html" class="hlavicka__odkaz hlavicka__odkaz--aktivni">Produkty</a></li>
+        <li><a href="contact.html" class="hlavicka__odkaz">Kontakt</a></li>
       </menu>
-      <div class="nav-actions">
-        <button class="nav-icon-btn" aria-label="Vyhledat">
-          <span class="emoji-icon" aria-hidden="true">🔍</span>
+      <div class="hlavicka__akce">
+        <button class="hlavicka__ikona" aria-label="Vyhledat">
+          <span class="ikona-emotikonu" aria-hidden="true">🔍</span>
         </button>
-        <button class="nav-icon-btn" aria-label="Košík">
-          <span class="emoji-icon" aria-hidden="true">🛍️</span>
+        <button class="hlavicka__ikona" aria-label="Košík">
+          <span class="ikona-emotikonu" aria-hidden="true">🛍️</span>
         </button>
-        <button class="hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
+        <button class="hlavicka__hamburger" id="hamburger" aria-label="Otevřít menu" aria-expanded="false" aria-controls="mobile-menu">
           <span></span><span></span><span></span>
         </button>
       </div>
     </nav>
-    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-label="Mobilní navigace" aria-hidden="true">
+    <div class="mobilni-menu" id="mobile-menu" role="dialog" aria-label="Mobilní navigace" aria-hidden="true">
       <menu role="list">
-        <li><a href="index.html" class="mobile-link">Úvod</a></li>
-        <li><a href="products.html" class="mobile-link active">Produkty</a></li>
-        <li><a href="contact.html" class="mobile-link">Kontakt</a></li>
+        <li><a href="index.html" class="mobilni-menu__odkaz">Úvod</a></li>
+        <li><a href="products.html" class="mobilni-menu__odkaz mobilni-menu__odkaz--aktivni">Produkty</a></li>
+        <li><a href="contact.html" class="mobilni-menu__odkaz">Kontakt</a></li>
       </menu>
     </div>
   </header>
@@ -54,7 +54,7 @@
   <main>
 
     
-    <nav class="breadcrumb" aria-label="Navigační drobečky">
+    <nav class="drobecky" aria-label="Navigační drobečky">
       <ol role="list">
         <li><a href="index.html">Úvod</a></li>
         <li aria-hidden="true">/</li>
@@ -65,86 +65,86 @@
     </nav>
 
     
-    <section class="product-detail" aria-label="Detail produktu">
-      <div class="product-detail-grid">
+    <section class="detail-produktu" aria-label="Detail produktu">
+      <div class="detail-produktu__grid">
 
         
-        <div class="product-images">
+        <div class="detail-produktu__obrazky">
           
-          <div class="product-thumbs" role="list" aria-label="Náhledy produktu">
-            <button class="product-thumb active" data-image="images/pic1.jpg" aria-label="Náhled 1" aria-pressed="true">
+          <div class="detail-produktu__nahledy" role="list" aria-label="Náhledy produktu">
+            <button class="detail-produktu__nahled detail-produktu__nahled--aktivni" data-image="images/pic1.jpg" aria-label="Náhled 1" aria-pressed="true">
               <img src="images/pic1.jpg" alt="Náhled produktu 1">
             </button>
-            <button class="product-thumb" data-image="images/pic2.jpg" aria-label="Náhled 2" aria-pressed="false">
+            <button class="detail-produktu__nahled" data-image="images/pic2.jpg" aria-label="Náhled 2" aria-pressed="false">
               <img src="images/pic2.jpg" alt="Náhled produktu 2">
             </button>
-            <button class="product-thumb" data-image="images/pic1.jpg" aria-label="Náhled 3" aria-pressed="false">
+            <button class="detail-produktu__nahled" data-image="images/pic1.jpg" aria-label="Náhled 3" aria-pressed="false">
               <img src="images/pic1.jpg" alt="Náhled produktu 3">
             </button>
           </div>
 
           
-          <button type="button" class="product-main-img" id="product-main-img" aria-label="Zvětšit fotografii produktu">
-            <span class="product-main-img-inner" id="product-main-img-inner">
+          <button type="button" class="detail-produktu__hlavni-obrazek" id="product-main-img" aria-label="Zvětšit fotografii produktu">
+            <span class="detail-produktu__hlavni-obrazek-obal" id="product-main-img-inner">
               <img id="product-main-photo" src="images/pic1.jpg" alt="Zip Hoodie Onyx – hlavní fotografie">
             </span>
           </button>
         </div>
 
         
-        <div class="product-info animate-fade-up">
+        <div class="detail-produktu__info animace--vyblednuti-vzhuru">
           
-          <div class="product-info-top">
-            <h1 class="product-detail-name">Zip Hoodie</h1>
-            <p class="product-detail-color">Onyx</p>
-            <p class="product-detail-price">1 490 Kč</p>
+          <div class="detail-produktu__info-hlavni">
+            <h1 class="detail-produktu__nazev">Zip Hoodie</h1>
+            <p class="detail-produktu__barva">Onyx</p>
+            <p class="detail-produktu__cena">1 490 Kč</p>
           </div>
 
           
-          <div class="product-option">
-            <p class="product-option-label">Barva: <strong>Onyx</strong></p>
-            <div class="color-swatches" role="radiogroup" aria-label="Výběr barvy">
-              <button class="color-swatch active" style="background:#c8a97e" aria-label="Onyx" aria-checked="true" role="radio" title="Onyx"></button>
-              <button class="color-swatch" style="background:#4a7ab5" aria-label="Slate Blue" aria-checked="false" role="radio" title="Slate Blue"></button>
-              <button class="color-swatch" style="background:#2a2a2a" aria-label="Black" aria-checked="false" role="radio" title="Black"></button>
-              <button class="color-swatch" style="background:#8a6a5a" aria-label="Mocha" aria-checked="false" role="radio" title="Mocha"></button>
+          <div class="detail-produktu__volba">
+            <p class="detail-produktu__volba-oznaceni">Barva: <strong>Onyx</strong></p>
+            <div class="barvy__vzorky" role="radiogroup" aria-label="Výběr barvy">
+              <button class="barvy__vzorek barvy__vzorek--aktivni" style="background:#c8a97e" aria-label="Onyx" aria-checked="true" role="radio" title="Onyx"></button>
+              <button class="barvy__vzorek" style="background:#4a7ab5" aria-label="Slate Blue" aria-checked="false" role="radio" title="Slate Blue"></button>
+              <button class="barvy__vzorek" style="background:#2a2a2a" aria-label="Black" aria-checked="false" role="radio" title="Black"></button>
+              <button class="barvy__vzorek" style="background:#8a6a5a" aria-label="Mocha" aria-checked="false" role="radio" title="Mocha"></button>
             </div>
           </div>
 
           
-          <div class="product-option">
-            <p class="product-option-label">Velikost: <strong id="selected-size">—</strong></p>
-            <div class="size-btns" role="radiogroup" aria-label="Výběr velikosti">
-              <button class="size-btn" aria-label="Velikost XS" role="radio" aria-checked="false">XS</button>
-              <button class="size-btn" aria-label="Velikost S" role="radio" aria-checked="false">S</button>
-              <button class="size-btn" aria-label="Velikost M" role="radio" aria-checked="false">M</button>
-              <button class="size-btn" aria-label="Velikost L" role="radio" aria-checked="false">L</button>
-              <button class="size-btn" aria-label="Velikost XL" role="radio" aria-checked="false">XL</button>
+          <div class="detail-produktu__volba">
+            <p class="detail-produktu__volba-oznaceni">Velikost: <strong id="selected-size">—</strong></p>
+            <div class="velikosti__tlacitka" role="radiogroup" aria-label="Výběr velikosti">
+              <button class="velikosti__tlacitko" aria-label="Velikost XS" role="radio" aria-checked="false">XS</button>
+              <button class="velikosti__tlacitko" aria-label="Velikost S" role="radio" aria-checked="false">S</button>
+              <button class="velikosti__tlacitko" aria-label="Velikost M" role="radio" aria-checked="false">M</button>
+              <button class="velikosti__tlacitko" aria-label="Velikost L" role="radio" aria-checked="false">L</button>
+              <button class="velikosti__tlacitko" aria-label="Velikost XL" role="radio" aria-checked="false">XL</button>
             </div>
-            <a href="#" class="size-guide-link">Průvodce velikostmi</a>
+            <a href="#" class="velikost__pruvodce">Průvodce velikostmi</a>
           </div>
 
           
-          <div class="product-cta">
-            <div class="quantity-selector" aria-label="Počet kusů">
-              <button class="qty-btn" id="qty-minus" aria-label="Snížit počet">−</button>
-              <span class="qty-value" id="qty-value" aria-live="polite">1</span>
-              <button class="qty-btn" id="qty-plus" aria-label="Zvýšit počet">+</button>
+          <div class="detail-produktu__cta">
+            <div class="mnozstvi__vyber" aria-label="Počet kusů">
+              <button class="mnozstvi__tlacitko" id="qty-minus" aria-label="Snížit počet">−</button>
+              <span class="mnozstvi__hodnota" id="qty-value" aria-live="polite">1</span>
+              <button class="mnozstvi__tlacitko" id="qty-plus" aria-label="Zvýšit počet">+</button>
             </div>
-            <button class="btn btn-primary btn-full" id="add-to-cart">Přidat do košíku</button>
+            <button class="tlacitko tlacitko--primarni tlacitko--plna-sirka" id="add-to-cart">Přidat do košíku</button>
           </div>
-          <button class="btn btn-ghost btn-full" aria-label="Přidat do oblíbených">
-            <span class="emoji-icon" aria-hidden="true">❤️</span>
+          <button class="tlacitko tlacitko--pruhledny tlacitko--plna-sirka" aria-label="Přidat do oblíbených">
+            <span class="ikona-emotikonu" aria-hidden="true">❤️</span>
             Přidat do oblíbených
           </button>
 
           
-          <div class="product-accordion" id="accordion">
-            <button class="accordion-btn" aria-expanded="true" aria-controls="acc-desc" id="acc-desc-btn">
+          <div class="detail-produktu__akordeon" id="accordion">
+            <button class="akordeon__tlacitko" aria-expanded="true" aria-controls="acc-desc" id="acc-desc-btn">
               Popis produktu
-              <span class="emoji-icon" aria-hidden="true">⌄</span>
+              <span class="ikona-emotikonu" aria-hidden="true">⌄</span>
             </button>
-            <div class="accordion-content" id="acc-desc" role="region" aria-labelledby="acc-desc-btn">
+            <div class="akordeon__obsah" id="acc-desc" role="region" aria-labelledby="acc-desc-btn">
               <p>Oversized zip hoodie s prémiovým kovovým zipem. Vyrobena z měkké 80% bavlny a 20% polyesteru. Ideální pro každodenní nošení – pohodlná, stylová, nadčasová.</p>
               <ul role="list">
                 <li>Oversized střih</li>
@@ -154,19 +154,19 @@
               </ul>
             </div>
 
-            <button class="accordion-btn" aria-expanded="false" aria-controls="acc-size" id="acc-size-btn">
+            <button class="akordeon__tlacitko" aria-expanded="false" aria-controls="acc-size" id="acc-size-btn">
               Materiál a péče
-              <span class="emoji-icon" aria-hidden="true">⌄</span>
+              <span class="ikona-emotikonu" aria-hidden="true">⌄</span>
             </button>
-            <div class="accordion-content accordion-content--closed" id="acc-size" role="region" aria-labelledby="acc-size-btn">
+            <div class="akordeon__obsah akordeon__obsah--zavreno" id="acc-size" role="region" aria-labelledby="acc-size-btn">
               <p>80% bavlna, 20% polyester. Prát při 30 °C. Nečistit chemicky. Nesušit v sušičce.</p>
             </div>
 
-            <button class="accordion-btn" aria-expanded="false" aria-controls="acc-ship" id="acc-ship-btn">
+            <button class="akordeon__tlacitko" aria-expanded="false" aria-controls="acc-ship" id="acc-ship-btn">
               Doprava a vrácení
-              <span class="emoji-icon" aria-hidden="true">⌄</span>
+              <span class="ikona-emotikonu" aria-hidden="true">⌄</span>
             </button>
-            <div class="accordion-content accordion-content--closed" id="acc-ship" role="region" aria-labelledby="acc-ship-btn">
+            <div class="akordeon__obsah akordeon__obsah--zavreno" id="acc-ship" role="region" aria-labelledby="acc-ship-btn">
               <p>Doprava zdarma nad 1 500 Kč. Vrácení zboží do 30 dní bez udání důvodu.</p>
             </div>
           </div>
@@ -175,71 +175,71 @@
     </section>
 
     
-    <section class="section related" aria-labelledby="related-title">
-      <div class="section-header">
-        <h2 class="section-title" id="related-title">Mohlo by se vám líbit</h2>
-        <a href="products.html" class="section-link">Zobrazit vše</a>
+    <section class="sekce podobne" aria-labelledby="related-title">
+      <div class="sekce__header">
+        <h2 class="sekce__nadpis" id="related-title">Mohlo by se vám líbit</h2>
+        <a href="products.html" class="sekce__odkaz">Zobrazit vše</a>
       </div>
 
-      <div class="swiper related-swiper" aria-label="Podobné produkty">
+      <div class="swiper podobne__swiper" aria-label="Podobné produkty">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <article class="product-card">
-              <a href="detail.html" class="product-card-img-wrap" aria-label="Classic Tee">
-                <div class="product-card-img">
+            <article class="produkt__karta">
+              <a href="detail.html" class="produkt__karta-obrazek-obal" aria-label="Classic Tee">
+                <div class="produkt__karta-obrazek">
                 <img src="images/pic1.jpg" alt="Produktová fotografie" />
               </div>
-                <div class="product-card-overlay"><span>Rychlý náhled</span></div>
+                <div class="produkt__karta-prekryv"><span>Rychlý náhled</span></div>
               </a>
-              <div class="product-card-info">
-                <h3 class="product-card-name">Classic Tee</h3>
-                <p class="product-card-color">Cobalt</p>
-                <p class="product-card-price">890 Kč</p>
+              <div class="produkt__karta-info">
+                <h3 class="produkt__karta-nazev">Classic Tee</h3>
+                <p class="produkt__karta-barva">Cobalt</p>
+                <p class="produkt__karta-cena">890 Kč</p>
               </div>
             </article>
           </div>
           <div class="swiper-slide">
-            <article class="product-card">
-              <a href="detail.html" class="product-card-img-wrap" aria-label="Cargo Shorts">
-                <div class="product-card-img">
+            <article class="produkt__karta">
+              <a href="detail.html" class="produkt__karta-obrazek-obal" aria-label="Cargo Shorts">
+                <div class="produkt__karta-obrazek">
                 <img src="images/pic1.jpg" alt="Produktová fotografie" />
               </div>
-                <div class="product-card-overlay"><span>Rychlý náhled</span></div>
+                <div class="produkt__karta-prekryv"><span>Rychlý náhled</span></div>
               </a>
-              <div class="product-card-info">
-                <h3 class="product-card-name">Cargo Shorts</h3>
-                <p class="product-card-color">Sand</p>
-                <p class="product-card-price">790 Kč</p>
+              <div class="produkt__karta-info">
+                <h3 class="produkt__karta-nazev">Cargo Shorts</h3>
+                <p class="produkt__karta-barva">Sand</p>
+                <p class="produkt__karta-cena">790 Kč</p>
               </div>
             </article>
           </div>
           <div class="swiper-slide">
-            <article class="product-card">
-              <a href="detail.html" class="product-card-img-wrap" aria-label="Bucket Hat">
-                <div class="product-card-img">
+            <article class="produkt__karta">
+              <a href="detail.html" class="produkt__karta-obrazek-obal" aria-label="Bucket Hat">
+                <div class="produkt__karta-obrazek">
                 <img src="images/pic1.jpg" alt="Produktová fotografie" />
               </div>
-                <div class="product-card-overlay"><span>Rychlý náhled</span></div>
+                <div class="produkt__karta-prekryv"><span>Rychlý náhled</span></div>
               </a>
-              <div class="product-card-info">
-                <h3 class="product-card-name">Bucket Hat</h3>
-                <p class="product-card-color">Blue Slate</p>
-                <p class="product-card-price">490 Kč</p>
+              <div class="produkt__karta-info">
+                <h3 class="produkt__karta-nazev">Bucket Hat</h3>
+                <p class="produkt__karta-barva">Blue Slate</p>
+                <p class="produkt__karta-cena">490 Kč</p>
               </div>
             </article>
           </div>
           <div class="swiper-slide">
-            <article class="product-card">
-              <a href="detail.html" class="product-card-img-wrap" aria-label="Slim Denim">
-                <div class="product-card-img">
+            <article class="produkt__karta">
+              <a href="detail.html" class="produkt__karta-obrazek-obal" aria-label="Slim Denim">
+                <div class="produkt__karta-obrazek">
                 <img src="images/pic1.jpg" alt="Produktová fotografie" />
               </div>
-                <div class="product-card-overlay"><span>Rychlý náhled</span></div>
+                <div class="produkt__karta-prekryv"><span>Rychlý náhled</span></div>
               </a>
-              <div class="product-card-info">
-                <h3 class="product-card-name">Slim Denim</h3>
-                <p class="product-card-color">Indigo</p>
-                <p class="product-card-price">1 190 Kč</p>
+              <div class="produkt__karta-info">
+                <h3 class="produkt__karta-nazev">Slim Denim</h3>
+                <p class="produkt__karta-barva">Indigo</p>
+                <p class="produkt__karta-cena">1 190 Kč</p>
               </div>
             </article>
           </div>
@@ -251,14 +251,14 @@
   </main>
 
   
-  <footer class="footer" aria-label="Zápatí stránky">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="footer-logo">ZYNTHA</a>
-        <p class="footer-tagline">Prémiové streetwear pro každodenní styl.</p>
+  <footer class="paticka" aria-label="Zápatí stránky">
+    <div class="paticka__grid">
+      <div class="paticka__znacka">
+        <a href="index.html" class="paticka__logo">ZYNTHA</a>
+        <p class="paticka__slogan">Prémiové streetwear pro každodenní styl.</p>
       </div>
-      <nav class="footer-nav" aria-label="Produkty">
-        <h3 class="footer-nav-title">Produkty</h3>
+      <nav class="paticka__nav" aria-label="Produkty">
+        <h3 class="paticka__nav-nadpis">Produkty</h3>
         <ul role="list">
           <li><a href="products.html">Hoodies</a></li>
           <li><a href="products.html">Trička</a></li>
@@ -266,8 +266,8 @@
           <li><a href="products.html">Čepice</a></li>
         </ul>
       </nav>
-      <nav class="footer-nav" aria-label="Zákaznická podpora">
-        <h3 class="footer-nav-title">Zákaznická péče</h3>
+      <nav class="paticka__nav" aria-label="Zákaznická podpora">
+        <h3 class="paticka__nav-nadpis">Zákaznická péče</h3>
         <ul role="list">
           <li><a href="contact.html">Kontakt</a></li>
           <li><a href="#">Vrácení zboží</a></li>
@@ -275,8 +275,8 @@
           <li><a href="#">FAQ</a></li>
         </ul>
       </nav>
-      <nav class="footer-nav" aria-label="Sledujte nás">
-        <h3 class="footer-nav-title">Sledujte nás</h3>
+      <nav class="paticka__nav" aria-label="Sledujte nás">
+        <h3 class="paticka__nav-nadpis">Sledujte nás</h3>
         <ul role="list">
           <li><a href="#">Instagram</a></li>
           <li><a href="#">TikTok</a></li>
@@ -284,13 +284,13 @@
         </ul>
       </nav>
     </div>
-    <div class="footer-bottom">
+    <div class="paticka__spodek">
       <p>© 2026 ZYNTHA. Všechna práva vyhrazena.</p>
     </div>
   </footer>
 
   
-  <div class="toast" id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
+  <div class="notifikace" id="toast" role="alert" aria-live="assertive" aria-atomic="true"></div>
 
   
 </body>
